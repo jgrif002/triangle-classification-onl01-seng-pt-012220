@@ -21,10 +21,10 @@ class Triangle
     is_a_triangle 
     if sideA == sideB && sideB = sideC 
       :equilateral 
-    elsif sideA != sideB && sideB != sideC && sideC != sideA 
-      :scalene 
+    elsif sideA == sideB || sideB == sideC || sideA == sideC
+      :isoceles
     else 
-      :isoceles 
+      :scalene 
     end 
   end 
   
