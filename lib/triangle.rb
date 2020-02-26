@@ -9,7 +9,7 @@ class Triangle
   
   
   def is_a_triangle
-    if sideA > 0 && sideB > 0 && sideC > 0
+    if sideA > 0 && sideB > 0 && sideC > 0 && sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
       raise 
   
     else sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
