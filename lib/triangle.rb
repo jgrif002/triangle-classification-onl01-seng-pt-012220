@@ -25,7 +25,7 @@ class Triangle
     if sideA == sideB && sideB = sideC 
       :equilateral 
     elsif sideA == sideB || sideB == sideC || sideA == sideC
-      :isoceles
+      :isosceles
     else 
       :scalene 
     end 
