@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :sideA, :sideB, :sideC 
+  attr_reader :sideA, :sideB, :sideC 
   
   def initiliaze(sideA, sideB, sideC)
     @sideA = sideA
@@ -9,9 +9,9 @@ class Triangle
   
   
   def is_triangle 
-    triangle_yes = sideA > 0 && sideB > 0 && sideC > 0
-    sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
-    else
+    triangle_yes = (sideA > 0 && sideB > 0 && sideC > 0) && (sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB)
+    
+    if is_triangle != true 
       raise TriangleError
     end 
   end 
