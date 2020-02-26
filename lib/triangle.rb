@@ -7,7 +7,20 @@ class Triangle
     @sideC = sideC
   end 
   
+  def test1 
+    sideA > 0 && sideB > 0 && sideC > 0 
+  end 
+  
+  def test2
+    sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
+  end 
+  
   def kind 
+    if test1 == true & test2 == true 
+      puts "true" 
+    else
+      
+  
     if 
   end 
   
