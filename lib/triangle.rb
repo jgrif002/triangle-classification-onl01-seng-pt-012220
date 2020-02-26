@@ -19,7 +19,7 @@ class Triangle
     if test1 == true & test2 == true 
       puts "true" 
     else
-      raise 
+      raise TriangleError
       
   
     if 
