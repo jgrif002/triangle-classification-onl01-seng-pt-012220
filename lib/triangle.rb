@@ -15,7 +15,8 @@ class Triangle
     sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
   end 
   
-  def kind 
+  def kind
+    
     if test1 == true && test2 == true 
       puts "true" 
     else
