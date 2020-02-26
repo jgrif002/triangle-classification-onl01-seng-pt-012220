@@ -22,7 +22,7 @@ class Triangle
       raise TriangleError
     end 
     
-    if sideA == sideB == sideC 
+    if sideA = sideB = sideC 
       :equilateral 
     elsif sideA != sideB && sideB != sideC && sideC != sideA 
       :scalene 
