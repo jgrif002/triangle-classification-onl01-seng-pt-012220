@@ -19,9 +19,13 @@ class Triangle
     if test1 == true & test2 == true 
       puts "true" 
     else
+      raise 
       
   
     if 
+  end 
+  
+  class TriangleError < StandardError
   end 
   
 end
