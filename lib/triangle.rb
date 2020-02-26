@@ -20,6 +20,8 @@ class Triangle
       puts "true" 
     else
       raise TriangleError
+    end 
+    
       
   
     if 
