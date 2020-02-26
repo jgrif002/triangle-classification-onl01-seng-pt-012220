@@ -22,9 +22,13 @@ class Triangle
       raise TriangleError
     end 
     
-      
-  
-    if 
+    if sideA == sideB == sideC 
+      :equilateral 
+    elsif sideA != sideB && sideB != sideC && sideC != sideA 
+      :scalene 
+    else 
+      :isoceles 
+    end 
   end 
   
   class TriangleError < StandardError
