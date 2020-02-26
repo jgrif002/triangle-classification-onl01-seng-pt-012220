@@ -24,10 +24,10 @@ class Triangle
     
     if sideA == sideB && sideB = sideC 
       :equilateral 
-    elsif sideA == sideB || sideB == sideC || sideA == sideC
-      :isosceles
+    elsif sideA != sideB && sideB != sideC && sideA != sideC
+      :scalene
     else 
-      :scalene 
+      :isosceles  
     end 
   end 
   
