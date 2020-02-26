@@ -7,6 +7,8 @@ class Triangle
     @sideC = sideC
   end 
   
-  
+  def kind 
+    if 
+  end 
   
 end
