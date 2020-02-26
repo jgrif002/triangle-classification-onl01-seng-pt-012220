@@ -16,7 +16,7 @@ class Triangle
   end 
   
   def kind 
-    if test1 == true & test2 == true 
+    if test1 = true & test2 = true 
       puts "true" 
     else
       raise TriangleError
