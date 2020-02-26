@@ -8,8 +8,9 @@ class Triangle
   end 
   
   
-  def is_a_triangle
-    if sideA > 0 && sideB > 0 && sideC > 0 && sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
+  def is_triangle 
+    triangle_yes = sideA > 0 && sideB > 0 && sideC > 0
+    sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB 
     else
       raise TriangleError
     end 
@@ -18,7 +19,7 @@ class Triangle
     
   
   def kind
-    is_a_triangle 
+    is_triangle 
     if sideA == sideB && sideB = sideC 
       :equilateral 
     elsif sideA == sideB || sideB == sideC || sideA == sideC
